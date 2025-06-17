@@ -5,49 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Green Star</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
   <style>
-    * { box-sizing:border-box; margin: 0; padding: 0; }
-  
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0f0f0f;
-      color: #e0ffe0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
     }
-    header{
-        position : fixed;
-             top : 0;
-            left : 0;
-           right : 0;
-          height : 40px;
-background-color : #202123;
-         display : flex;
-     align-items : center;
-         padding : 0 30px;
-      box-shadow : 0 2px 8px rgba(0, 0, 0, 0.7);
-         z-index : 1001;
-           color : #4ade80;
-     font-weight : bold;
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 37.5px;
+      background-color:white;
+      display: flex;
+      align-items: center;
+      padding: 0 30px;
+       z-index: 1001;
+      color: #000000;
+      font-weight: bold;
+      
     }
-  
+
     .menu-toggle {
       position: fixed;
-      top: 10px;
+      top: 8.5px;
       left: 15px;
       background: none;
       border: none;
-      color: #4ade80;
+      color: #000000;
       font-size: 1.5rem;
       z-index: 1100;
       cursor: pointer;
     }
-  
+
     .sidebar {
       position: fixed;
       top: 0;
       left: -240px;
       width: 240px;
       height: 100%;
-      background-color: #1f1f1f;
+      background-color: #f0f0f0;
       display: flex;
       flex-direction: column;
       padding-top: 60px;
@@ -55,7 +57,7 @@ background-color : #202123;
       z-index: 1000;
     }
 
-   .sidebar.open {
+    .sidebar.open {
       left: 0;
     }
 
@@ -63,13 +65,13 @@ background-color : #202123;
       position: absolute;
       top: 10px;
       left: 20px;
-      color: #4ade80;
+      color: #000000;
       font-weight: bold;
       font-size: 1.2rem;
     }
 
     .sidebar a {
-      color: #ccc;
+      color: #000000;
       padding: 14px 20px;
       text-decoration: none;
       display: flex;
@@ -77,20 +79,19 @@ background-color : #202123;
       gap: 12px;
       transition: background 0.2s, color 0.2s;
     }
-  
 
     .sidebar a i {
       width: 20px;
-      text-align:center;
+      text-align: center;
     }
 
     .sidebar a:hover {
-      background-color: #2e2e2e;
-      color: #4ade80;
+      background-color: #dcdcdc;
+      color: #000000;
     }
 
     main {
-      padding: 70px 20px 20px 20px;
+      padding: 40px 20px 20px 20px;
     }
 
     @media (min-width: 769px) {
@@ -108,9 +109,9 @@ background-color : #202123;
     }
 
     .post-preview {
-      background-color: #1a1a1a;
-      border-left: 4px solid #4ade80;
-      box-shadow: 0 4px 12px rgba(0, 255, 0, 0.15);
+      background-color: #ffffff;
+      border-left: 4px solid #000000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       padding: 12px 16px;
       margin-bottom: 20px;
       border-radius: 12px;
@@ -119,12 +120,12 @@ background-color : #202123;
 
     .post-preview:hover {
       transform: translateY(-3px);
-      box-shadow: 0 6px 18px rgba(0, 255, 0, 0.25);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
     }
 
     .post-preview h1,
     .post-preview h2 {
-      color: #4ade80;
+      color: #000000;
       font-size: 1.3rem;
       margin-top: 0;
       margin-bottom: 0.3em;
@@ -132,13 +133,13 @@ background-color : #202123;
 
     .post-preview time {
       font-size: 0.8rem;
-      color: #999;
+      color: #555555;
       display: block;
       margin-bottom: 8px;
     }
 
     .post-preview p {
-      color: #ccc;
+      color: #333333;
       font-size: 0.95rem;
       margin-bottom: 10px;
       line-height: 1.4;
@@ -151,71 +152,116 @@ background-color : #202123;
 
     a.read-more {
       text-decoration: none;
-      color: #4ade80;
+      color: #000000;
       font-weight: bold;
     }
 
     a.read-more:hover {
-      color: #76f5a1;
+      color: #000088;
       text-decoration: underline;
     }
-     
-   </style>
   
+  .hero-description {
+  margin-top: 20px solid #ddd; /* create space below header */
+  padding: 30px 20px;
+  background-color:white;
+  text-align: center;
+  border-bottom:1px solid #ddd;
+}
+
+.hero-description h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.hero-description p {
+  font-size: 1.1rem;
+  color: #333333;
+  max-width: 500px;
+  margin-bottom: 1px ;
+}
+  .header-line {
+  border: none;
+  height: 1px;
+  background-color: #ccc; /* light gray line */
+  margin-top: 40px;
+}
+.share-header {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #111111;
+  margin-left: auto;
+  cursor: pointer;
+}
+  .post-preview {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+  
+  
+  </style>
+  <style> html { scroll-behavior: smooth; } </style>
 </head>
 <body>
   <header>  
-  <button class="menu-toggle" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
+    <button class="menu-toggle" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
 
-  <nav style="display: flex; align-items: center; background-color: #1a1a1a; padding: 10px;">
-    <h1 style="color: #00ff88; margin: 0; font-family: "Trebuchet MS", sans-serif;	">GREEN STAR</h1>
-  </nav>
-    <!-- Load Font Awesome for the share icon -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- Share Button -->
-    <button onclick="sharePost()"  style="background: transparent; border: none; cursor: pointer;">
-  <i class="fas fa-share-alt" style="color: #4ade80; font-size: 30px;"></i>
+    <nav style="display: flex; align-items: center; background-color: #ffffff; padding: 10px;">
+      <h1 style="color: #000000; margin: 0; font-family: 'Trebuchet MS', sans-serif;">GREEN STAR</h1>
+    </nav>
+
+    <button class="share-header" onclick="sharePost()">
+  <i class="fas fa-share-alt"></i>
 </button>
 
-<script>
-function sharePost() {
-  if (navigator.share) {
-    navigator.share({
-      title: document.title,
-      text : "Check this out!",
-       url : window.location.href
-    })
-    .then(() => console.log('Shared successfully'))
-    .catch((error) => console.log('Error sharing:', error));
-  } else {
-    alert("Sharing is not supported on this browser. You can copy the URL.");
-  }
-}
-</script>
-    
-</header>
+    <script>
+      function sharePost() {
+        if (navigator.share) {
+          navigator.share({
+            title: document.title,
+            text : "Check this out!",
+            url : window.location.href
+          })
+          .then(() => console.log('Shared successfully'))
+          .catch((error) => console.log('Error sharing:', error));
+        } else {
+          alert("Sharing is not supported on this browser. You can copy the URL.");
+        }
+      }
+    </script>
+  </header>
+  <hr class="header-line">
+
   <aside class="sidebar" id="sidebar">
     <div class="logo">Green Star</div>
     <a href="index.html"><i class="fas fa-home"></i> Home</a>
     <a href="about.html"><i class="fas fa-user"></i> About</a>
     <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
     <a href="https://youtube.com/@green_star_0.8"><i class="fab fa-youtube"></i> YouTube</a>
-    <a href="privacy.html"><i class="fas fa-shield"></i>Privacy Policy</a>
+    <a href="privacy.html"><i class="fas fa-shield"></i> Privacy Policy</a>
   </aside>
   
+  <section class="hero-description">
+  <h2>Welcome to Green Star</h2>
+  <p>Explore blogs on creativity, design, and tech. Follow my journey of ideas and inspiration!</p>
+</section>
+
   <main>
-      <div class="post-preview">
+    <div class="post-preview">
       <h1>Welcome to My Blog</h1>
       <time datetime="2025-06-02">June 2, 2025</time>
       <p>This is the first post on my classic-themed blog. I’ll be sharing my thoughts on writing, creativity, and web design here regularly.</p>
       <a href="post1.html" class="read-more">Read More</a>
-      </div>
+    </div>
   </main>
 
   <script>
     function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('open');
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('open');
     }
   </script>
 </body>
